@@ -1,0 +1,156 @@
+body{
+  text-align: center;
+  background-color: #ccc;
+  height: 300px;
+  
+}
+
+header{
+  background-color: #fff;
+  margin: 0 auto;
+  width: 1000px;
+  height: 30px;
+}
+
+.cont{
+  text-align: center;
+  width:1000px;
+  margin:0 auto;
+  background-color: #ccc;
+
+}
+footer{
+  
+  margin: 0 auto;
+  width: 700px;
+  height: 60px;
+}
+hr{
+  width: 90px;
+  margin-left: 265px;
+
+}
+/*.logo{
+  height:5px;
+}*/
+('.owl-carousel').owlCarousel({
+    items:5,
+    loop:true,
+    margin:10,
+    merge:true,
+    responsive:{
+        678:{
+            mergeFit:true
+        },
+        1000:{
+            mergeFit:false
+        }
+    }
+});
+
+.controls{
+  position: relative;
+  align:center;
+}
+.me{
+  bottom: 70px;
+ /* margin:80px,auto,auto,60px;*/
+  left:225px;
+  background-color: rgba(0,0,0,0.6);
+  width:300px;
+  height: 300px;
+  color: #fff;
+  padding: 50px;
+  text-align: justify;
+  position: relative;
+  z-index:-1;
+}
+.contact{
+  bottom: 450px;
+ /* margin:80px,auto,auto,60px;*/
+  right:225px;
+  background-color: rgba(0,0,0,0.6);
+  width:300px;
+  height:280px;
+  color: #fff;
+  padding: 50px;
+  text-align: justify;
+  position: relative;
+  z-index:-1;
+  float: right;
+
+}
+.wrapper {
+  display: inline-flex;
+  justify-content: center;
+}
+.wrapper i {
+  padding: 10px;
+  text-shadow: 0px 6px 8px rgba(0, 0, 0, 0.6);
+  transition: all ease-in-out 150ms;
+}
+.wrapper a:nth-child(1) {
+  color: #dd4b39;
+}
+.wrapper a:nth-child(2) {
+  color: #4867AA;
+}
+.wrapper a:nth-child(3) {
+  color: #1DA1F2;
+}
+.wrapper i:hover {
+  margin-top: -3px;
+  text-shadow: 0px 14px 10px rgba(0, 0, 0, 0.4);
+}
+html,body {height:100%;}
+body {margin:0;}
+.outer {
+    display:table;
+    width:100%;
+    height:100%;
+}
+header,footer {display:table-row;}
+header,footer {height:1px;}
+
+{
+  box-sizing: border-box;
+}
+/*.menu {
+  float: left;
+  width: 20%;
+}
+.menuitem {
+  padding: 8px;
+  margin-top: 7px;
+  border-bottom: 1px solid #f1f1f1;
+}
+.cont{
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.me{
+  background-color: lightblue;
+  float: left;
+  width: 20%;
+  padding: 10px 15px;
+  margin-top: 7px;
+}*/
+
+@media only screen and (width:1000px) {
+  /* For tablets: */
+  .cont {
+    width: 80%;
+    padding: 0;
+  }
+  .me {
+    width: 100%;
+  }
+}
+@media only screen and (width:1000px) {
+  /* For mobile phones: */
+   .cont, .me, .contact {
+    width: 100%;
+  }
+}
